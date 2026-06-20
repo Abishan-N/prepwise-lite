@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PrepWise AI
 
-## Getting Started
+PrepWise AI is a simple web application that helps students create personalized study plans using Artificial Intelligence. Students can enter their subject, topics to study, and exam date, and the system generates a structured study schedule.
 
-First, run the development server:
+## Features
+
+* Generate AI-powered study plans
+* Enter subject, topics, and exam date
+* Save generated study plans to the database
+* View previously saved study plans
+* Simple and user-friendly interface
+* Fast and responsive design
+
+## Technologies Used
+
+* Next.js
+* React
+* Tailwind CSS
+* Supabase
+* Groq AI API
+* Vercel
+
+## How It Works
+
+1. The student enters the subject, topics, and exam date.
+2. The information is sent to the AI service.
+3. The AI generates a personalized study plan.
+4. The generated plan is saved in the database.
+5. Students can view their saved plans at any time.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Abishan-N/prepwise-lite.git
+```
+
+Go to the project folder:
+
+```bash
+cd prepwise-lite
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file and add the required environment variables:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_key
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```text
+prepwise-lite/
+├── app/
+├── components/
+├── lib/
+├── public/
+├── package.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Future Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* User authentication
+* Progress tracking
+* Study reminders
+* Download study plans as PDF
+* Dashboard with study statistics
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+Abishan N
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Computer Science Undergraduate
